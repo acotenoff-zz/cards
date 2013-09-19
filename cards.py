@@ -24,13 +24,14 @@ def card_name(card):
     else:
         return str(card)
 
-#def shuffle(deck):
- #   return random.shuffle(deck)
+#def shuffles(deck):
+#    shuffledDeck = random.shuffle(deck)
+ #   return shuffledDeck
  
 def view_cards():
     deck2 = deck()
     for i in range(0, len(deck2)):
-        print deck2[i]
+        print card_name(deck2[i][0]) + ' of ' + str(deck2[i][1])
 
 def main():
     view_cards()
